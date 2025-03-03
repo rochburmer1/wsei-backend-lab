@@ -26,6 +26,15 @@ public static class SeedData
             quizItemRepo?.Add(item3);
             Quiz quiz = new(id: 1, title: "Matematyka", items: [item1, item2, item3]);
             quizRepo?.Add(quiz);
+            
+            QuizItem geoItem1 = quizItemRepo.Add(new QuizItem(0, "Stolica Francji?", ["Berlin", "Madryt", "Londyn"], "Paryż"));
+            QuizItem geoItem2 = quizItemRepo.Add(new QuizItem(0, "Największy kontynent?", ["Europa", "Ameryka Północna", "Australia"], "Azja"));
+            QuizItem geoItem3 = quizItemRepo.Add(new QuizItem(0, "Morze Bałtyckie jest...?", ["Słone", "Słodkie", "Kwaśne"], "Słone"));
+            quizItemRepo?.Add(geoItem1);
+            quizItemRepo?.Add(geoItem2);
+            quizItemRepo?.Add(geoItem3);
+            // Tworzenie quizu "Geografia"
+            Quiz geoQuiz = new(id:0, title: "Geografia", items: [geoItem1, geoItem2, geoItem3]);
         }
     }
 }

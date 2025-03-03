@@ -7,6 +7,15 @@ using Infrastructure.Memory.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
+
+builder.Services.AddSingleton<IGenericRepository<Quiz>, QuizRepository>();
+builder.Services.AddSingleton<IGenericRepository<QuizItem>, QuizItemRepository>();
+builder.Services.AddSingleton<IGenericRepository<QuizItemUserAnswer>, QuizItemUserAnswerRepository>();
+
+
+// Rejestracja serwisu użytkownika
+builder.Services.AddSingleton<IQuizUserService, QuizUserService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
