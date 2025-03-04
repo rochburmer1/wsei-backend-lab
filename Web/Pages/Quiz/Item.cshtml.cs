@@ -61,7 +61,7 @@ namespace BackendLab01.Pages
             }
             else
             {
-                return RedirectToPage("Summary", new { quizId = QuizId });
+                return RedirectToPage("/Quiz/Summary", new { quizId = QuizId });
             }
         }
 

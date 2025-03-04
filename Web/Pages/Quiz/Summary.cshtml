@@ -1,8 +1,26 @@
-﻿@page "{quizId}/{itemId}"
-@model BackendLab01.Pages.Summary
+﻿@page "{quizId}"
+@model BackendLab01.Pages.SummaryModel
 @{
     ViewData["Title"] = "summary";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
+<h2>Podsumowanie quizu</h2>
 
+<p>Udzieliłeś poprawnych odpowiedzi: <strong>@Model.CorrectAnswers</strong> na <strong>@Model.TotalQuestions</strong>.</p>
+
+@if (Model.CorrectAnswers == Model.TotalQuestions)
+{
+<p class="text-success">Gratulacje! Odpowiedziałeś poprawnie na wszystkie pytania! 🎉</p>
+}
+else if (Model.CorrectAnswers > Model.TotalQuestions / 2)
+{
+<p class="text-info">Nieźle! Możesz spróbować ponownie, aby poprawić wynik.</p>
+}
+else
+{
+<p class="text-danger">Spróbuj jeszcze raz, możesz wypaść lepiej!</p>
+}
+
+<a asp-page="/Index" class="btn btn-primary">Wróć do strony głównej</a>
+<a asp-page="/Quiz/Start" class="btn btn-secondary">Rozpocznij nowy quiz</a>
 <H3>@ViewData["Title"]</H3>
