@@ -1,0 +1,16 @@
+D:\repo\wsei-backend-lab\Infrastructure\bin\Debug\net8.0-windows\Infrastructure.deps.json
+D:\repo\wsei-backend-lab\Infrastructure\bin\Debug\net8.0-windows\Infrastructure.dll
+D:\repo\wsei-backend-lab\Infrastructure\bin\Debug\net8.0-windows\Infrastructure.pdb
+D:\repo\wsei-backend-lab\Infrastructure\bin\Debug\net8.0-windows\ApplicationCore.dll
+D:\repo\wsei-backend-lab\Infrastructure\bin\Debug\net8.0-windows\ApplicationCore.pdb
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.csproj.AssemblyReference.cache
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.AssemblyInfoInputs.cache
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.AssemblyInfo.cs
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.csproj.CoreCompileInputs.cache
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.sourcelink.json
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastr.15EFFBFE.Up2Date
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.dll
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\refint\Infrastructure.dll
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\Infrastructure.pdb
+D:\repo\wsei-backend-lab\Infrastructure\obj\Debug\net8.0-windows\ref\Infrastructure.dll
