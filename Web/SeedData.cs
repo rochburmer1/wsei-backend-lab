@@ -27,14 +27,23 @@ public static class SeedData
             Quiz quiz = new(id: 1, title: "Matematyka", items: [item1, item2, item3]);
             quizRepo?.Add(quiz);
             
-            QuizItem geoItem1 = quizItemRepo.Add(new QuizItem(0, "Stolica Francji?", ["Berlin", "Madryt", "Londyn"], "Paryż"));
-            QuizItem geoItem2 = quizItemRepo.Add(new QuizItem(0, "Największy kontynent?", ["Europa", "Ameryka Północna", "Australia"], "Azja"));
-            QuizItem geoItem3 = quizItemRepo.Add(new QuizItem(0, "Morze Bałtyckie jest...?", ["Słone", "Słodkie", "Kwaśne"], "Słone"));
+            QuizItem geoItem1 = new QuizItem(id:1, "Stolica Cypru?", ["Berlin", "Madryt", "Londyn"], "Nikozja");
+            QuizItem geoItem2 = new QuizItem(id:1, "Największy kontynent?", ["Europa", "Ameryka Północna", "Australia"], "Azja");
+            QuizItem geoItem3 = new QuizItem(id:1, "Morze Bałtyckie jest...?", ["Słone", "Słodkie", "Kwaśne"], "Słone");
             quizItemRepo?.Add(geoItem1);
             quizItemRepo?.Add(geoItem2);
             quizItemRepo?.Add(geoItem3);
-            // Tworzenie quizu "Geografia"
             Quiz geoQuiz = new(id:0, title: "Geografia", items: [geoItem1, geoItem2, geoItem3]);
+            quizRepo?.Add(geoQuiz);
+            
+            QuizItem histItem1 = new QuizItem(1, "Katarzyna II Wielka była cesarzową?", ["Prus", "Węgier", "Austrii"], "Rosji");
+            QuizItem histItem2 = new QuizItem(1, "W którym wieku żył Gall Anonim?", ["XVI", "IX", "XII"], "XI");
+            QuizItem histItem3 = new QuizItem(1, "Z którymi zwierzętami Hannibal przeprawił się przez Alpy?", ["Lwami", "Tygrysami", "Wielbłądami"], "Słoniami");
+            quizItemRepo?.Add(geoItem1);
+            quizItemRepo?.Add(geoItem2);
+            quizItemRepo?.Add(geoItem3);
+            Quiz histQuiz = new(id:0, title: "Geografia", items: [geoItem1, geoItem2, geoItem3]);
+            quizRepo?.Add(histQuiz);
         }
     }
 }
