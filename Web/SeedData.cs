@@ -36,14 +36,7 @@ public static class SeedData
             Quiz geoQuiz = new(id:0, title: "Geografia", items: [geoItem1, geoItem2, geoItem3]);
             quizRepo?.Add(geoQuiz);
             
-            QuizItem histItem1 = new QuizItem(7, "Katarzyna II Wielka była cesarzową?", ["Prus", "Węgier", "Austrii"], "Rosji");
-            QuizItem histItem2 = new QuizItem(8, "W którym wieku żył Gall Anonim?", ["XVI", "IX", "XII"], "XI");
-            QuizItem histItem3 = new QuizItem(9, "Z którymi zwierzętami Hannibal przeprawił się przez Alpy?", ["Lwami", "Tygrysami", "Wielbłądami"], "Słoniami");
-            quizItemRepo?.Add(histItem1);
-            quizItemRepo?.Add(histItem2);
-            quizItemRepo?.Add(histItem3);
-            Quiz histQuiz = new(id:2, title: "Geografia", items: [geoItem1, geoItem2, geoItem3]);
-            quizRepo?.Add(histQuiz);
+           
         }
     }
 }
