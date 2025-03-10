@@ -9,9 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781a280b-4c38-4e42-aaf1-b145d266901a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Pages/Quiz/List.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Pages/Quiz/List.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.wsei-backend-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wsei-backend-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/UserService/IQuizUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/UserService/IQuizUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/UserService/QuizUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/UserService/QuizUserService.cs" afterDir="false" />
@@ -39,8 +36,10 @@
       <change beforePath="$PROJECT_DIR$/UnitTest/obj/Debug/net9.0/UnitTest.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/obj/Debug/net9.0/UnitTest.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTest/obj/Debug/net9.0/UnitTest.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/obj/Debug/net9.0/UnitTest.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTest/obj/Debug/net9.0/UnitTest.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/obj/Debug/net9.0/UnitTest.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Pages/Quiz/List.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Pages/Quiz/QuizList.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Pages/Quiz/List.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Pages/Quiz/QuizList.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/SeedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/SeedData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/bin/Debug/net9.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/net9.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/bin/Debug/net9.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/net9.0/ApplicationCore.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/bin/Debug/net9.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/net9.0/Infrastructure.dll" afterDir="false" />
@@ -178,7 +177,8 @@
       <workItem from="1741086719022" duration="8421000" />
       <workItem from="1741102293352" duration="4771000" />
       <workItem from="1741109837413" duration="874000" />
-      <workItem from="1741613129870" duration="2481000" />
+      <workItem from="1741613129870" duration="2641000" />
+      <workItem from="1741633609777" duration="1606000" />
     </task>
     <task id="LOCAL-00001" summary="todo 3, 6,7,8 &#10;done 4,5">
       <option name="closed" value="true" />
@@ -204,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741104352170</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="list nie dziala">
+      <option name="closed" value="true" />
+      <created>1741617817055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741617817055</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +226,7 @@
     <MESSAGE value="quizy zrobione, Summary nie działa" />
     <MESSAGE value="todo 5 (summary jest, problem ze stroną) 6, 7, 8" />
     <MESSAGE value="03.03.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="03.03.2025" />
+    <MESSAGE value="list nie dziala" />
+    <option name="LAST_COMMIT_MESSAGE" value="list nie dziala" />
   </component>
 </project>
