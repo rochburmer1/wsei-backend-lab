@@ -14,4 +14,6 @@ public interface IQuizUserService
     List<QuizItemUserAnswer> GetUserAnswersForQuiz(int quizId, int userId);
     int CountCorrectAnswersForQuizFilledByUser(int quizId, int userId);
     
+    List<Quiz> GetAllQuizzes();
+    
 }

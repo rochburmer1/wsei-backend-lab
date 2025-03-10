@@ -39,7 +39,10 @@ public class QuizUserService: IQuizUserService
         var userAnswer = new QuizItemUserAnswer(quizItem: item, userId: userId, answer: answer, quizId: quizId);
         answerRepository.Add(userAnswer);
     }
-    
+    public List<Quiz> GetAllQuizzes()
+    {
+        return quizRepository.FindAll().ToList();
+    }
     public List<QuizItemUserAnswer> GetUserAnswersForQuiz(int quizId, int userId)
     {
         // return answerRepository.FindAll()
