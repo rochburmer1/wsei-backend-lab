@@ -60,4 +60,9 @@ public class QuizUserService: IQuizUserService
         var userAnswers = GetUserAnswersForQuiz(quizId, userId);
         return userAnswers.Count(answer => answer.IsCorrect());
     }
+
+    public IEnumerable<Quiz> FindAllQuizzes()
+    {
+        return quizRepository.FindAll();
+    }
 }
