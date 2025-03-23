@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repo\\wsei-backend-lab\\Web\\Web.csproj": {}
+    "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj": {}
   },
   "projects": {
-    "D:\\repo\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
+    "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repo\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "D:\\repo\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
-        "outputPath": "D:\\repo\\wsei-backend-lab\\ApplicationCore\\obj\\",
+        "projectPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\mmdur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mmdur\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +38,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -65,40 +60,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\pawel\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\mmdur\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\repo\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repo\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\repo\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
-        "outputPath": "D:\\repo\\wsei-backend-lab\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\mmdur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mmdur\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\repo\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\repo\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -112,7 +101,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -139,44 +129,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\pawel\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\mmdur\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\repo\\wsei-backend-lab\\Web\\Web.csproj": {
+    "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repo\\wsei-backend-lab\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "D:\\repo\\wsei-backend-lab\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
-        "outputPath": "D:\\repo\\wsei-backend-lab\\Web\\obj\\",
+        "projectPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\mmdur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mmdur\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\repo\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\repo\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "D:\\repo\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\repo\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\mmdur\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -190,7 +174,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -220,7 +205,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\pawel\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\mmdur\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
