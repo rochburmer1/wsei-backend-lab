@@ -7,25 +7,29 @@ using Infrastructure.Memory.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddRazorPages();
 
+// Rejestracja serwisów
 builder.Services.AddSingleton<IGenericRepository<Quiz, int>, MemoryGenericRepository<Quiz, int>>();
 builder.Services.AddSingleton<IGenericRepository<QuizItem, int>, MemoryGenericRepository<QuizItem, int>>();
 builder.Services.AddSingleton<IGenericRepository<QuizItemUserAnswer, string>, MemoryGenericRepository<QuizItemUserAnswer, string>>();
 builder.Services.AddSingleton<IQuizAdminService, QuizAdminService>();
 builder.Services.AddSingleton<IQuizUserService, QuizUserService>();
 builder.Services.AddTransient<IGenericGenerator<int>, IntGenerator>();
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
+
+// Dodanie Swaggera
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Włączenie Swaggera w trybie developerskim
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
@@ -48,7 +52,9 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast");
-
+app.UseRouting();
+app.UseAuthorization();
+app.MapControllers(); 
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

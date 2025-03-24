@@ -31,20 +31,6 @@ namespace BackendLab01.Controllers
             return NotFound(); // Zwraca 404 Not Found, jeśli quiz nie istnieje
         }
         [HttpGet]
-        [Route("{id}")]
-        public ActionResult<QuizDto> FindQuizById(int id)
-        {
-            var quiz = _service.FindQuizById(id);
-
-            if (quiz != null)
-            {
-                var quizDto = QuizDto.of(quiz);
-                return Ok(quizDto);
-            }
-
-            return NotFound();
-        }
-        [HttpGet]
         public IEnumerable<QuizDto> FindAll()
         {
             var quizzes = _service.FindAllQuizzes();
