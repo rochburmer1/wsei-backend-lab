@@ -1,64 +1,59 @@
-using Microsoft.AspNetCore.Mvc;
-using BackendLab01.Dto;
 using BackendLab01;
-using ApplicationCore.Models.QuizAggregate;
+using Microsoft.AspNetCore.Mvc;
+using WebAPI.Dto;
 
-namespace BackendLab01.Controllers
+namespace WebAPI.api.v1.quizzes
 {
     [ApiController]
     [Route("api/v1/quizzes")]
-    public class QuizController : ControllerBase
+    public class QuizController : Controller
     {
-        private readonly IQuizUserService _service;
-
-        public QuizController(IQuizUserService service)
+        IQuizUserService _service;
+        public QuizController(IQuizUserService quizUserService)
         {
-            _service = service;
+            _service = quizUserService;
         }
-
+        public IActionResult Index()
+        {
+            return View();
+        }
         [HttpGet]
         [Route("{id}")]
         public ActionResult<QuizDto> FindById(int id)
         {
-            Quiz? quiz = _service.FindQuizById(id);
-
-            if (quiz != null)
+            var quiz = _service.FindQuizById(id);
+            if (quiz == null)
             {
-                QuizDto quizDto = QuizDto.of(quiz);
-                return Ok(quizDto); // Zwraca 200 OK z quizDto
+                return NotFound();
             }
-
-            return NotFound(); // Zwraca 404 Not Found, jeśli quiz nie istnieje
+            QuizDto quizDto = QuizDto.of(quiz);
+            return Ok(quizDto);
         }
         [HttpGet]
         public IEnumerable<QuizDto> FindAll()
         {
-            var quizzes = _service.FindAllQuizzes();
-            return quizzes.Select(QuizDto.of);
+            return _service.FindAllQuizzes().Select(QuizDto.of);
         }
         [HttpPost]
         [Route("{quizId}/items/{itemId}")]
-        public IActionResult SaveAnswer(int quizId, int itemId, [FromBody] QuizItemAnswerDto dto)
+        public void SaveAnswer([FromBody] QuizItemAnswerDto dto, int quizId, int itemId)
         {
-            if (dto == null)
-            {
-                return BadRequest("Invalid request body");
-            }
-
             _service.SaveUserAnswerForQuiz(quizId, dto.UserId, itemId, dto.Answer);
-
-            return NoContent(); // 204 No Content - odpowiedź została zapisana
         }
         [HttpGet]
-        [Route("{quizId}/users/{userId}/result")]
-        public ActionResult<QuizUserResultDto> GetUserQuizResult(int quizId, int userId)
+        [Route("{quizId}/users/{userId}")]
+        public ActionResult<QuizAnswerResultDto> GetCorrectAnswersForUser(int quizId, int userId)
         {
-            int correctAnswers = _service.CountCorrectAnswersForQuizFilledByUser(quizId, userId);
+            int result = _service.CountCorrectAnswersForQuizFilledByUser(quizId, userId);
 
-            var resultDto = new QuizUserResultDto(userId, quizId, correctAnswers);
+            QuizAnswerResultDto quizAnswerResultDto = new QuizAnswerResultDto
+            {
+                QuizId = quizId,
+                UserId = userId,
+                CorrectAnswersCount = result
+            };
 
-            return Ok(resultDto);
+            return Ok(quizAnswerResultDto);
         }
-
     }
 }
